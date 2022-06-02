@@ -12,10 +12,86 @@
 
 
 *{
-    font-family: 'Tobi', sans-serif;
+    font-family: "Tobi";
     box-sizing: border-box;
 }
 
+body{
+    background: url('../img/dekstop/bg-big.jpg') center center /cover no-repeat;
+}
+img{
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+        color:$title-one;
+    }
+}
+
+.container{
+    display: block;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.d-n{
+    display: none;
+}
+
+.title{
+    font-family: 'Tobi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: $title-one;
+    text-shadow: 0px 0px 2px #3A0805;
+}
+
+.menu__link{
+    font-family: 'Tobi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $title-one;
+    text-shadow: 0px 0px 2px #3A0805;
+}
+
+.text-one{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $text-two;
+    text-shadow: 0px 0px 2px #3A0805;
+}
+
+.text-two{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #EB924D;
+    text-shadow: 0px 0px 2px #3A0805;
+}
 
 
+//Блоки
+@import "blocks/menu";
+
+
+
+
+//Подключение файла с адаптивом
 @import "media/media";

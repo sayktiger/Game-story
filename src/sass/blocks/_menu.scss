@@ -1,0 +1,51 @@
+.menu{
+    width: 100%;
+    max-height: 120px;
+    background: url("../img/dekstop/tab-bar.png") center center /cover no-repeat;
+    margin-top: 83px;
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 52px 0 28px 0;
+            &s{
+                &:not(:last-child){
+                    margin-right: 32px;
+                }
+                
+            }
+        }
+        .navbar__link_rigth{
+            transition: all 0.3s;
+            display: block;
+            
+            height: 80px;
+            &:hover{
+                transform: rotate(18deg) translateY(-42px);
+                color: #FFD7B7;
+                max-width: 144px;
+            }
+        }
+        .navbar__link_left{
+            transition: all 0.3s;
+            display: block;
+            
+            height: 80px;
+            &:hover{
+                transform: rotate(-18deg) translateY(-42px);
+                color: #FFD7B7;
+                max-width: 144px;
+            }
+        }
+    }
+    &__img{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
