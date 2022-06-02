@@ -1,7 +1,7 @@
-.menu{
+.header{
     width: 100%;
     max-height: 120px;
-    background: url("../img/dekstop/tab-bar.png") center center /cover no-repeat;
+    background: url("../img/dekstop/tab-bar.png") center center /contain no-repeat;
     margin-top: 83px;
     .navbar{
         display: flex;
@@ -42,10 +42,6 @@
             }
         }
     }
-    &__img{
-        margin-top: 40px;
-        display: flex;
-        justify-content: center;
-    }
+    
     
 }

@@ -1,0 +1,71 @@
+.game-text{
+    margin-bottom: 490px;
+    &__title{
+        font-family: 'Tobi';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: $text-one;
+        text-shadow: 0px 0px 2px #3A0805;
+        text-align: center;
+        &_line{
+            position: relative;
+            margin-bottom: 283px;
+            &:before{
+                content: url("../img/line.png");
+                width: 100%;
+                height: 52px;
+                top:0;
+                left:50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    &__wrapper{
+        position: relative;
+        &::before{
+            content: url("../img/line-bg.png");
+            position: absolute;
+            top:0;
+            left:0;
+        }
+    }
+    &__rigth-descr{
+        &:nth-child(1){
+            padding-top: 82px;
+            margin-bottom: 227px;
+        }
+        text-align: center;
+        display: flex;
+        justify-content: flex-end;
+        p{
+            max-width: 610px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: $title-one;
+            text-shadow: 0px 0px 2px #3A0805;
+        }
+    }
+    &__left-descr{
+        
+        text-align: center;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 227px;
+        p{
+            max-width: 610px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: $title-one;
+            text-shadow: 0px 0px 2px #3A0805;
+        }
+    }
+}

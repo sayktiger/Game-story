@@ -17,7 +17,7 @@
 }
 
 body{
-    background: url('../img/dekstop/bg-big.jpg') center center /cover no-repeat;
+    background: url('../img/dekstop/bg-big.jpg') center center /100% no-repeat;
 }
 img{
     max-width: 100%;
@@ -70,9 +70,6 @@ a{
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     color: $text-two;
     text-shadow: 0px 0px 2px #3A0805;
 }
@@ -86,9 +83,19 @@ a{
     text-shadow: 0px 0px 2px #3A0805;
 }
 
+.squirrel{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
 
+//Подключение стилей для слайдера
+@import "libs/swiper-bundle.min";
 //Блоки
 @import "blocks/menu";
+@import "blocks/game-story";
+@import "blocks/clasess";
+@import "blocks/game-text";
 
 
 
