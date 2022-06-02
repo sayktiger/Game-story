@@ -1,0 +1,21 @@
+//Сброс стилей
+@import "libs/bootstrap-reboot.min";
+
+//Подключение шрифтов
+@import "../fonts/font";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@400;500&display=swap');
+
+
+@import "variable/variable";
+@import "variable/mixin";
+
+
+
+*{
+    font-family: 'Tobi', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+@import "media/media";
