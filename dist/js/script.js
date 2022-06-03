@@ -8,7 +8,8 @@ document.addEventListener(`DOMContentLoaded`, () => {
     tabs = body.querySelectorAll(`.clasess__pick__warrior_img`),
     mobileBurger = body.querySelector(`.mobile__icon`),
     mobileMenu = body.querySelector(`.mobile__menu`),
-    mobileBurgerClose = body.querySelector(`.mobile__menu__close`);
+    mobileBurgerClose = body.querySelector(`.mobile__menu__close`),
+    mobileLink = body.querySelectorAll(`.mobile__menu__items a`);
 
   mobileBurger.addEventListener(`click`, (e) => {
       e.preventDefault();
@@ -39,6 +40,14 @@ document.addEventListener(`DOMContentLoaded`, () => {
 
   });
 
+  mobileLink.forEach((item) => {
+    item.addEventListener(`click`, () =>{
+      body.classList.remove(`overlay`);
+      mobileMenu.classList.remove(`mobile__menu__active`);
+      mobileBurger.classList.remove(`d-n`);
+    });
+  });
+
   tabs.forEach(function (tab, i) {
     tab.addEventListener('click', function () {
       hideTab();
@@ -63,7 +72,6 @@ document.addEventListener(`DOMContentLoaded`, () => {
   const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
     animationTime = 600,
     framesCount = 120;
-
   anchors.forEach(function (item) {
     // каждому якорю присваиваем обработчик события
     item.addEventListener('click', function (e) {
