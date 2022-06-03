@@ -2,6 +2,7 @@
     .mobile__menu{
         display: none;
     }
+    
     .mobile__icon{
         display: none;
     }
@@ -26,6 +27,9 @@
         &::before{
             position: absolute;
         }
+    }
+    .game-text__last-descr{
+        padding-bottom: 80px;
     }
     .roadmap__wrapper{
         flex-wrap: wrap;
@@ -99,6 +103,9 @@
     }
     .game-text{
         margin-bottom: 229px;
+    }
+    .game-text__last-descr{
+        padding-bottom: 40px;
     }
     .roadmap{
         margin-bottom: 222px;
@@ -223,6 +230,7 @@
             right: 52px;
             z-index: 20;
             display: block;
+            transition: all 0.6s;
         }
         &__item{
             display: flex;
@@ -272,10 +280,12 @@
             opacity: 1;
             display: block;
             z-index: 15;
+            transition: all 0.6s;
         }
     }
     .d-n{
         display: none;
+        transition: all 0.6s;
     }
     
 }
@@ -555,6 +565,438 @@
                 border: none;
                 transition: all .3s;
                 margin-left: 10px;
+            }
+        }
+    }
+    .d-n{
+        display: none;
+    }
+}
+
+@media(min-width:375px) and (max-width: 575px){
+    .container{
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .mobile__menu{
+        display: block;
+    }
+    .mobile__icon{
+        display: block;
+    }
+    .header{
+        display: none;
+    }
+    .squirrel{
+        margin-top: 208px;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+    .modal{
+        background: url("../img/laptop/modal-bg.jpg") top center /100% 100% no-repeat;
+        height: 100%;
+        overflow-y: scroll;
+        align-items: center;
+        
+        padding-top: 420px;
+        padding-bottom: 420px;
+        &__title{
+            font-family: 'Tobi';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 120%;
+            text-transform: uppercase;
+            color: #EB924D;
+            text-shadow: 0px 0px 2px #3A0805;
+        }
+        &__descr{
+            max-width: 100%;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #FFD7B7;
+            text-shadow: 0px 0px 2px #3A0805;
+        }
+        &__close{
+            top:20px;
+            right: 20px;
+        }
+    }
+    .mobile__icon{
+        position: fixed;
+        z-index: 5;
+        top:63px;
+        right: 52px;
+    }
+    .mobile__menu{
+        background: url("../img/mobile/menu-bg.jpg") center bottom /contain no-repeat;
+        width: 100%;
+        height: 845px;
+        position: fixed;
+        z-index: -10;
+        opacity: 0;
+        top:0;
+        left: 0;
+        transition: all 0.6s;
+        padding-top: 100px;
+        padding-bottom: 250px;
+        overflow: scroll;
+        display: none;
+        &__close{
+            position: absolute;
+            top: 63px;
+            right: 52px;
+            z-index: 20;
+            display: block;
+        }
+        &__item{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 448px;
+            margin-bottom: 34px;
+            &s{
+                a{
+                    font-family: 'Tobi';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 120%;
+                    text-transform: uppercase;
+                    color: #EB924D;
+                    text-shadow: 0px 0px 2px #3A0805;
+                    transition: all 0.3s;
+                }
+            }
+        }
+        &__social{
+            padding: 135px 25px;
+            background: transparent;
+            width: 100%;
+            height: 355px;
+            margin: 0 auto;
+            &__title{
+                font-family: 'Tobi';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 120%;
+                color: #FFD7B7;
+                text-shadow: 0px 0px 2px #3A0805;
+                text-align: center;
+                margin-bottom: 24px;
+            }
+            &__wrapper{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 320px;
+            }
+        }
+        &__active{
+            opacity: 1;
+            display: block;
+            z-index: 15;
+        }
+    }
+    .game-story{
+        background: url("../img/mobile/block-1.png") top center /100% 100% no-repeat;
+        margin-top: 196px;
+        margin-bottom: 137px;
+        padding: 147px 0 93px;
+        display: flex;
+        align-items: center;
+        &__title{
+            font-family: 'Tobi';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 120%;
+            text-transform: uppercase;
+            color: #EB924D;
+            text-shadow: 0px 0px 2px #3A0805;
+        }
+        &__descr{
+            max-width: 100%;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 150%;
+            color: #FFD7B7;
+            text-shadow: 0px 0px 2px #3A0805;
+        }
+    }
+    
+    .game-text__title_line{
+        &:before{
+            content: '';
+            position: absolute;
+            background: url("../img/line.png") center center /contain no-repeat;
+            width: 720px;
+            height: 42px;
+            
+        }
+    }
+    .game-text__wrapper{
+        overflow: visible;
+        &::before{
+            content: url("../img/mobile/line.png");
+            width: 369px;
+            height: 100%;
+            position: absolute;
+            left:0;
+        }
+    }
+    .game-text{
+        overflow: hidden;
+        margin-bottom: 251px;
+        &__title{
+            font-family: 'Tobi';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 120%;
+            text-transform: uppercase;
+            color: #CF5C2B;
+            text-shadow: 0px 0px 2px #3A0805;
+            margin: 0;
+        }
+    }
+    .game-text__title_line{
+        margin-bottom: 100px;
+    }
+    .game-text__rigth-descr p{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        color: #FFD7B7;
+        text-shadow: 0px 0px 2px #3A0805;
+        max-width: 253px;
+        max-height: 162px;
+    }
+    .game-text__left-descr p{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        color: #FFD7B7;
+        text-shadow: 0px 0px 2px #3A0805;
+        max-width: 253px;
+        max-height: 162px;
+    }
+    .game-text__left-descr{
+        margin-bottom: 97px;
+        padding-left: 0;
+        padding-top: 40px;
+    }
+
+    .game-text__rigth-descr:nth-child(1){
+        padding-top: 75px;
+        padding-right: 0;
+        margin-bottom: 120px;
+    }
+    .game-text__last-descr{
+        padding-top: 80px;
+        padding-right: 0;
+        padding-bottom: 140px;
+    }
+
+    .roadmap{
+        margin-bottom: 222px;
+    }
+    .roadmap__block {
+        max-width: 100%;
+        &:nth-child(1){
+            width: 100%;
+            padding: 135px 45px;
+            background: url("../img/dekstop/block-2.png") top center/100% 100% no-repeat;
+            order:2;
+        }
+        &:nth-child(2){
+            width: 100%;
+            order:1;
+        }
+        &:nth-child(3){
+            width: 100%;
+            padding: 135px 45px 60px;
+            background: url("../img/mobile/block-4.png") top center/100% 100% no-repeat;
+            order:3;
+        }
+    }
+    .roadmap__title{
+        margin-bottom: 103px;
+        font-family: 'Tobi';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #EB924D;
+        text-shadow: 0px 0px 2px #3A0805;
+    }
+    .roadmap__wrapper{
+        flex-direction: column;
+    }
+    
+    .clasess__wrapper{
+        flex-direction: column;
+    }
+    .clasess__pick{
+        min-height: 83px;
+        order:1;
+        margin-bottom: 54px;
+        &__arrow-top{
+            display: none;
+        }
+        &__arrow-bot{
+            display: none;
+        }
+        &__warrior{
+            flex-direction: row;
+            min-height: 83px;
+        }
+    }
+    
+    .clasess__hero{
+        order:2;
+        &__title{
+            font-family: 'Tobi';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 120%;
+            text-transform: uppercase;
+            color: #EB924D;
+            text-shadow: 0px 0px 2px #3A0805;
+        }
+        &__descr{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #FFD7B7;
+            text-shadow: 0px 0px 2px #3A0805;
+        }
+    }
+    .clasess__header{
+        display: none;
+    }
+    .clasess{
+        margin-bottom: 212px;
+        &__title{
+            font-family: 'Tobi';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 120%;
+            text-transform: uppercase;
+            color: #CF5C2B;
+            text-shadow: 0px 0px 2px #3A0805;
+            margin-bottom: 72px;
+        }
+    }
+    
+    .footer__menu{
+        width: 100%;
+        height: 355px;
+        background: url("../img/laptop/navbar.png") top center/cover no-repeat;
+        &__wrapper{
+            padding-top: 120px;
+            flex-direction: column;
+        }
+        &__img{
+            display: none;
+        }
+        &__list{
+            width: 100%;
+            display: block;
+        }
+        &__item{
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            align-items: flex-start;
+            display: none;
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        .footer__menu__social{
+            max-width: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            &__title{
+                margin-right: 0;
+                font-family: 'Tobi';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 29px;
+                line-height: 120%;
+                color: #FFD7B7;
+                text-shadow: 0px 0px 2px #3A0805;
+                margin-bottom: 29px;
+            }
+            &__icon{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                align-items: center;
+                max-width: 333px;
+                width: 333px;
+                max-height: 33px;
+                flex-wrap: nowrap;
+                .opacity-0{
+                    display: none;
+                }
+            }
+            
+            .footer__menu__social__icons:nth-child(-n+3){
+                margin-bottom: 0;
+            }
+            .footer__menu__social__icons:not(:last-child){
+                margin-right: 5px;
+            }
+            
+            .footer__menu__btn{
+                background: url("../img/mobile/button.png") top center/cover no-repeat;
+                font-family: Tobi;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 120%;
+                text-transform: uppercase;
+                color: #ffd7b7;
+                text-shadow: 0 0 2px #3a0805;
+                padding: 18px 74px;
+                outline: 0;
+                border: none;
+                transition: all .3s;
+                margin-left: 10px;
+                position: absolute;
+                top:100%;
+                left:50%;
+                transform: translateX(-50%);
             }
         }
     }
