@@ -93,4 +93,13 @@ document.addEventListener(`DOMContentLoaded`, () => {
     });
   });
 
+  let doFullpage = document.documentElement.clientWidth;
+  if (doFullpage < 767){
+    const rigthText = document.querySelectorAll(`.game-text__rigth-descr p`);
+    const leftText = document.querySelector(`.game-text__left-descr p`);
+    rigthText.forEach(item => {
+      item.textContent = "John draw real poor on call my from. May she mrs furnished discourse extremely. Ask doubt noisy shade guest did builther him. Ignorant repeated hastened it do.";
+    });
+    leftText.textContent = "John draw real poor on call my from. May she mrs furnished discourse extremely. Ask doubt noisy shade guest did builther him. Ignorant repeated hastened it do.";
+  }
 });
