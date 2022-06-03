@@ -2,7 +2,7 @@
 @import "libs/bootstrap-reboot.min";
 
 //Подключение шрифтов
-@import "../fonts/font";
+@import "font";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@400;500&display=swap');
 
 
@@ -17,7 +17,13 @@
 }
 
 body{
-    background: url('../img/dekstop/bg-big.jpg') center center /100% no-repeat;
+    background: url('../img/dekstop/bg-big.jpg') top center /cover no-repeat;
+    position: relative;
+    overflow-x: hidden;
+}
+//Класс для модульно окна, чтобы не скролить body
+.overlay{
+    overflow-y: hidden;
 }
 img{
     max-width: 100%;
@@ -42,6 +48,9 @@ a{
 }
 .d-n{
     display: none;
+}
+.opacity-0{
+    opacity: 0;
 }
 
 .title{
@@ -89,13 +98,16 @@ a{
     justify-content: center;
 }
 
-//Подключение стилей для слайдера
-@import "libs/swiper-bundle.min";
+//Подключение стилей анимации
+@import "libs/animate.min";
 //Блоки
 @import "blocks/menu";
 @import "blocks/game-story";
 @import "blocks/clasess";
 @import "blocks/game-text";
+@import "blocks/roadmap";
+@import "blocks/footer";
+@import "blocks/modal";
 
 
 

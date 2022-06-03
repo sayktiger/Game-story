@@ -1,0 +1,112 @@
+.footer{
+    margin-bottom: 230px;
+    &__menu{
+        width: 100%;
+        height: 407px;
+        background: url("../img/dekstop/navbar.png") top center /cover no-repeat;
+        &__wrapper{
+            padding-top: 75px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+        }
+        &__item{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            &s{
+                &:not(:last-child){
+                    margin-bottom: 24px;
+                }
+            }
+        }
+        &__link{
+            font-family: 'Tobi';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 120%;
+            text-transform: uppercase;
+            color: $text-two;
+            text-shadow: 0px 0px 2px #3A0805;
+            &_rigth{
+                transition: all 0.3s;
+                display: block;
+                width: 100%;
+                height: 100%;
+                &:hover{
+                    transform: rotate(20deg) scale(1.2);
+                    color: #FFD7B7;
+                    
+                }
+            }
+            &_left{
+                transition: all 0.3s;
+                display: block;
+                width: 100%;
+                height: 100%;
+                &:hover{
+                    transform: rotate(-20deg) scale(1.2);
+                    color: #FFD7B7;
+                    
+                }
+            }
+        }
+        &__social{
+            max-width: 287px;
+            
+            &__title{
+                margin-bottom: 20px;
+                font-family: 'Tobi';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                color: $text-two;
+                text-shadow: 0px 0px 2px #3A0805;
+                text-align: left;
+            }
+            &__icon{
+                max-width: 135px;
+                max-height: 82px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 13px;
+                &s{
+                    &:nth-child(-n+3){
+                        margin-bottom: 20px;
+                    }
+                    a{
+                        display: inline-block;
+                        
+                        transition: all 0.3s;
+                        &:hover{
+                            transform: rotate(-31deg) scale(1.6) translateY(10px);
+                        }
+                    }
+                }
+            }
+        }
+        &__btn{
+            background: url("../img/dekstop/button.png") top center /cover no-repeat;
+            font-family: 'Tobi';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 120%;
+            text-transform: uppercase;
+            color: $text-two;
+            text-shadow: 0px 0px 2px #3A0805;
+            padding: 25px 108px;
+            outline: none;
+            border: none;
+            transition: all 0.3s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
