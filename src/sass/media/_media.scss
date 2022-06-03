@@ -16,7 +16,7 @@
         &:before{
             content: '';
             position: absolute;
-            background: url("../img/line.png") center center /contain no-repeat;
+            background: url("../img/line.webp") center center /contain no-repeat;
             width: 960px;
             height: 42px;
             
@@ -53,7 +53,7 @@
         margin-top: 208px;
     }
     .game-story{
-        background: url("../img/laptop/block-1.png") top center /contain no-repeat;
+        background: url("../img/laptop/block-1.webp") top center /contain no-repeat;
         margin-top: 196px;
         margin-bottom: 137px;
         padding: 194px 93px 254px 116px;
@@ -73,7 +73,7 @@
         &:before{
             content: '';
             position: absolute;
-            background: url("../img/line.png") center center /contain no-repeat;
+            background: url("../img/line.webp") center center /contain no-repeat;
             width: 720px;
             height: 42px;
             
@@ -82,7 +82,7 @@
     .game-text__wrapper{
         overflow: hidden;
         &::before{
-            content: url("../img/laptop/line.png");
+            content: url("../img/laptop/line.webp");
             position: absolute;
             left:20px;
         }
@@ -124,7 +124,7 @@
     .footer__menu{
         width: 100%;
         height: 355px;
-        background: url("../img/laptop/navbar.png") top center/cover no-repeat;
+        background: url("../img/laptop/navbar.webp") top center/cover no-repeat;
         &__wrapper{
             padding-top: 152px;
             flex-direction: column;
@@ -171,7 +171,7 @@
             }
             
             .footer__menu__btn{
-                background: url(../img/laptop/button.png) top center/cover no-repeat;
+                background: url(../img/laptop/button.webp) top center/cover no-repeat;
                 font-family: Tobi;
                 font-style: normal;
                 font-weight: 400;
@@ -189,7 +189,7 @@
         }
     }
     .modal{
-        background: url("../img/laptop/modal-bg.jpg") top center /100% 100% no-repeat;
+        background: url("../img/laptop/modal-bg.webp") top center /100% 100% no-repeat;
         height: 100%;
         overflow-y: scroll;
         align-items: center;
@@ -211,7 +211,7 @@
         right: 52px;
     }
     .mobile__menu{
-        background: url("../img/laptop/menu-bg.jpg") top center /cover no-repeat;
+        background: url("../img/laptop/menu-bg.webp") top center /cover no-repeat;
         width: 100%;
         height: 1114px;
         position: fixed;
@@ -255,7 +255,7 @@
         }
         &__social{
             padding: 135px 220px;
-            background: url("../img/laptop/menu-social.png") top center /cover no-repeat;
+            background: url("../img/laptop/menu-social.webp") top center /cover no-repeat;
             width: 768px;
             height: 355px;
             margin: 0 auto;
@@ -311,7 +311,7 @@
         padding: 0;
     }
     .modal{
-        background: url("../img/laptop/modal-bg.jpg") top center /100% 100% no-repeat;
+        background: url("../img/laptop/modal-bg.webp") top center /100% 100% no-repeat;
         height: 100%;
         overflow-y: scroll;
         align-items: center;
@@ -333,7 +333,7 @@
         right: 52px;
     }
     .mobile__menu{
-        background: url("../img/laptop/menu-bg.jpg") top center /cover no-repeat;
+        background: url("../img/laptop/menu-bg.webp") top center /cover no-repeat;
         width: 100%;
         height: 1114px;
         position: fixed;
@@ -376,7 +376,7 @@
         }
         &__social{
             padding: 135px 130px;
-            background: url("../img/laptop/menu-social.png") top center /cover no-repeat;
+            background: url("../img/laptop/menu-social.webp") top center /cover no-repeat;
             width: 100%;
             height: 355px;
             margin: 0 auto;
@@ -405,7 +405,7 @@
         }
     }
     .game-story{
-        background: url("../img/mobile/block-1.png") top center /100% 100% no-repeat;
+        background: url("../img/mobile/block-1.webp") top center /100% 100% no-repeat;
         margin-top: 196px;
         margin-bottom: 137px;
         padding: 147px 15px 93px;
@@ -420,7 +420,7 @@
         &:before{
             content: '';
             position: absolute;
-            background: url("../img/line.png") center center /contain no-repeat;
+            background: url("../img/line.webp") center center /contain no-repeat;
             width: 720px;
             height: 42px;
             
@@ -429,7 +429,7 @@
     .game-text__wrapper{
         overflow: visible;
         &::before{
-            content: url("../img/laptop/line.png");
+            content: url("../img/laptop/line.webp");
             width: 320px;
             height: 100%;
             position: absolute;
@@ -504,7 +504,7 @@
     .footer__menu{
         width: 100%;
         height: 355px;
-        background: url("../img/laptop/navbar.png") top center/cover no-repeat;
+        background: url("../img/laptop/navbar.webp") top center/cover no-repeat;
         &__wrapper{
             padding-top: 152px;
             flex-direction: column;
@@ -551,7 +551,7 @@
             }
             
             .footer__menu__btn{
-                background: url("../img/mobile/button.png") top center/cover no-repeat;
+                background: url("../img/mobile/button.webp") top center/cover no-repeat;
                 font-family: Tobi;
                 font-style: normal;
                 font-weight: 400;
@@ -573,7 +573,7 @@
     }
 }
 
-@media(min-width:375px) and (max-width: 575px){
+@media(min-width:320px) and (max-width: 575px){
     .container{
         max-width: 100%;
         padding: 0 15px;
@@ -595,7 +595,7 @@
         padding: 0;
     }
     .modal{
-        background: url("../img/laptop/modal-bg.jpg") top center /100% 100% no-repeat;
+        background: url("../img/laptop/modal-bg.webp") top center /100% 100% no-repeat;
         height: 100%;
         overflow-y: scroll;
         align-items: center;
@@ -637,7 +637,7 @@
         right: 52px;
     }
     .mobile__menu{
-        background: url("../img/mobile/menu-bg.jpg") center bottom /contain no-repeat;
+        background: url("../img/mobile/menu-bg.webp") center bottom /contain no-repeat;
         width: 100%;
         height: 845px;
         position: fixed;
@@ -709,7 +709,7 @@
         }
     }
     .game-story{
-        background: url("../img/mobile/block-1.png") top center /100% 100% no-repeat;
+        background: url("../img/mobile/block-1.webp") top center /100% 100% no-repeat;
         margin-top: 196px;
         margin-bottom: 137px;
         padding: 147px 0 93px;
@@ -741,7 +741,7 @@
         &:before{
             content: '';
             position: absolute;
-            background: url("../img/line.png") center center /contain no-repeat;
+            background: url("../img/line.webp") center center /contain no-repeat;
             width: 720px;
             height: 42px;
             
@@ -750,7 +750,7 @@
     .game-text__wrapper{
         overflow: visible;
         &::before{
-            content: url("../img/mobile/line.png");
+            content: url("../img/mobile/line.webp");
             width: 369px;
             height: 100%;
             position: absolute;
@@ -822,7 +822,7 @@
         &:nth-child(1){
             width: 100%;
             padding: 135px 45px;
-            background: url("../img/dekstop/block-2.png") top center/100% 100% no-repeat;
+            background: url("../img/dekstop/block-2.webp") top center/100% 100% no-repeat;
             order:2;
         }
         &:nth-child(2){
@@ -832,7 +832,7 @@
         &:nth-child(3){
             width: 100%;
             padding: 135px 45px 60px;
-            background: url("../img/mobile/block-4.png") top center/100% 100% no-repeat;
+            background: url("../img/mobile/block-4.webp") top center/100% 100% no-repeat;
             order:3;
         }
     }
@@ -916,7 +916,7 @@
     .footer__menu{
         width: 100%;
         height: 355px;
-        background: url("../img/laptop/navbar.png") top center/cover no-repeat;
+        background: url("../img/laptop/navbar.webp") top center/cover no-repeat;
         &__wrapper{
             padding-top: 120px;
             flex-direction: column;
@@ -979,7 +979,7 @@
             }
             
             .footer__menu__btn{
-                background: url("../img/mobile/button.png") top center/cover no-repeat;
+                background: url("../img/mobile/button.webp") top center/cover no-repeat;
                 font-family: Tobi;
                 font-style: normal;
                 font-weight: 400;

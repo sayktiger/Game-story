@@ -102,8 +102,8 @@ document.addEventListener(`DOMContentLoaded`, () => {
     });
     leftText.textContent = "John draw real poor on call my from. May she mrs furnished discourse extremely. Ask doubt noisy shade guest did builther him. Ignorant repeated hastened it do.";
   }
-  let textTwo = document.documentElement.clientWidth;
-  if (textOne < 575){
+  let textWidthTwo = document.documentElement.clientWidth;
+  if (textWidthTwo < 575){
     const textTwo = document.querySelectorAll(`.game-story__descr`);
     textTwo.forEach(item => {
       item.textContent = "John draw real poor on call my John draw real poor John draw real poor on call my John draw real poor John draw real poor John draw real poor John draw real poor John draw real poor John draw real poor John draw real poor John draw real poor John draw real poor John draw real poor John draw real poor John draw real poor John draw real poor";
