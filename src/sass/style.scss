@@ -17,7 +17,8 @@
 }
 
 body{
-    background: url('../img/dekstop/bg-big.jpg') top center /cover no-repeat;
+    // background: url('../img/dekstop/bg-big.jpg') top center /cover no-repeat;
+    background: linear-gradient(0deg, rgba(1, 0, 48, 0.51), rgba(1, 0, 48, 0.51)), linear-gradient(180deg, #0A2700 0%, #115800 25.86%, #197803 57.11%, #092300 100%);
     position: relative;
     overflow-x: hidden;
 }
@@ -96,6 +97,13 @@ a{
     margin-top: 40px;
     display: flex;
     justify-content: center;
+}
+
+.mobile__menu{
+    display: none;
+}
+.mobile__icon{
+    display: none;
 }
 
 //Подключение стилей анимации

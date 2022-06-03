@@ -5,17 +5,36 @@ document.addEventListener(`DOMContentLoaded`, () => {
     modal = body.querySelector(`.modal`),
     modalClose = body.querySelector(`.modal__close`),
     tabContent = body.querySelectorAll(`.clasess__hero`),
-    tabs = body.querySelectorAll(`.clasess__pick__warrior_img`);
+    tabs = body.querySelectorAll(`.clasess__pick__warrior_img`),
+    mobileBurger = body.querySelector(`.mobile__icon`),
+    mobileMenu = body.querySelector(`.mobile__menu`),
+    mobileBurgerClose = body.querySelector(`.mobile__menu__close`);
 
+  mobileBurger.addEventListener(`click`, (e) => {
+      e.preventDefault();
+      mobileBurger.classList.add(`d-n`);
+      body.classList.add(`overlay`);
+      mobileMenu.classList.add(`mobile__menu__active`);
+      
+  });
+
+  mobileBurgerClose.addEventListener(`click`, (e) => {
+    mobileBurger.classList.remove(`d-n`);
+    body.classList.remove(`overlay`);
+    mobileMenu.classList.remove(`mobile__menu__active`);
+    
+  });
+
+  
   modalButton.addEventListener(`click`, (e) => {
     e.preventDefault();
-
+    body.classList.add(`overlay`);
     modal.classList.add(`modal__active`);
 
   });
 
   modalClose.addEventListener(`click`, (e) => {
-
+    body.classList.remove(`overlay`);
     modal.classList.remove(`modal__active`);
 
   });
