@@ -7,10 +7,8 @@
     background: url("../img/modal-bg.jpg") center center /cover no-repeat;
     position: fixed;
     top:0;
-    left:0;
-    z-index: -2;
-    opacity: 0;
-    transition: all 0.3s;
+    right:-100%;
+    transition: all 1s;
     &__descr{
         margin-top: 45px;
         font-family: 'Roboto';
@@ -26,8 +24,7 @@
         max-width: 738px;
     }
     &__active{
-        opacity: 1;
-        z-index: 3;
+        right:0;
     }
 
     &__close{

@@ -1,0 +1,28 @@
+@media(min-width:992px) and (max-width: 1200px){
+    .container{
+        max-width: 960px;
+    }
+    .game-story{
+        padding: 280px 180px 162px;
+    }
+    .game-text__title_line{
+        &:before{
+            content: '';
+            position: absolute;
+            background: url("../img/line.png") center center /contain no-repeat;
+            width: 960px;
+            height: 42px;
+            
+        }
+    }
+    .game-text__wrapper{
+        overflow: hidden;
+        &::before{
+            position: absolute;
+        }
+    }
+    .roadmap__wrapper{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}

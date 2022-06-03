@@ -16,9 +16,10 @@
             flex-direction: column;
             text-align: center;
             align-items: center;
+            justify-content: space-around;
             &s{
                 &:not(:last-child){
-                    margin-bottom: 24px;
+                    margin-bottom: 18px;
                 }
             }
         }
@@ -31,6 +32,7 @@
             text-transform: uppercase;
             color: $text-two;
             text-shadow: 0px 0px 2px #3A0805;
+            
             &_rigth{
                 transition: all 0.3s;
                 display: block;
